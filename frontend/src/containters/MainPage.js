@@ -149,7 +149,7 @@ export default function MainPage(props) {
     };
   
     const addProgramareInDB = (programare) => {
-        fetch('http://localhost:8080/programari', {
+        fetch(`${process.env.REACT_APP_API_URL}/programari`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -225,7 +225,7 @@ export default function MainPage(props) {
             +  "." + " Locația aleasă este: " + numeLocatie + "."
        // const subject = 'Programare căsătorie'
     
-        fetch("http://localhost:8080/utils/send", {
+        fetch(`${process.env.REACT_APP_API_URL}/send`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
