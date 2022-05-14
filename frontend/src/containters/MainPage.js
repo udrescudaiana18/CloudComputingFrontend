@@ -225,7 +225,7 @@ export default function MainPage(props) {
             +  "." + " Locația aleasă este: " + numeLocatie + "."
        // const subject = 'Programare căsătorie'
     
-        fetch(`${process.env.REACT_APP_API_URL}/send`, {
+        fetch(`${process.env.REACT_APP_API_URL}/utils/send`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
